@@ -1,0 +1,833 @@
+@font-face {
+  font-family: Prima Sans;
+  src: url(/fonts/Prima\ Sans\ Regular.otf);
+}
+@font-face {
+  font-family: Prima Sans Bold; 
+  src: url(/fonts/Prima\ Sans\ Bold.otf);
+}
+@keyframes fadeIn{
+  0% {
+      opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes overlayOpen{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+.contact-overlay-1,
+.contact-overlay-2,
+.contact-overlay-3,
+.contact-overlay-4 {
+  animation: overlayOpen 0.5s ease-in-out 0s 1 normal forwards;
+}
+html {
+  background: url(/img/scales-of-justice-BG.png) no-repeat top center fixed; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+  font-family: Prima Sans;
+  overflow-x: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 16px 0px;
+  align-items: center;
+  transition: transform 1s;
+}
+.logo {
+  width: 116px;
+  margin-left: 26px;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  font-size: 90%;
+  position: absolute;
+  right: 40px;
+  font-family: Prima Sans Bold;
+  color: #F9ECDB;
+}
+.navigation a,
+.explore-nav a,
+.contact-row a {
+  text-decoration: none;
+  color: #F9ECDB;
+  transition: color 0.6s;
+}
+.navigation a:hover,
+.explore-nav a:hover,
+.contact-row a:hover {
+  color: #202020;
+}
+a.practice {
+  color: #202020;
+}
+.page-label {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 33px;
+  top: 150px;
+  align-items: center;
+  gap: 51px;
+}
+.practice-letters,
+.areas {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  font-family: Prima Sans Bold;
+  font-size: 62px;
+  line-height: 80px;
+  color: #F9ECDB;
+  align-items: center;
+  width: 97px;
+}
+.label-shadow {
+  display: flex;
+  flex-direction: column;
+  position: absolute;  
+  left: 12px;
+  top: 155px;
+  align-items: center;
+  gap: 51px; 
+  z-index: 1; 
+}
+.practice-shadow,
+.areas-shadow {
+  display: flex;
+  flex-direction: column;
+  font-family: Prima Sans Bold;
+  font-size: 62px;
+  line-height: 80px;
+  color: #202020;
+  align-items: center;
+  width: 97px;
+}
+.main-section {
+  position: absolute;
+  top: 156px;
+  left: 144px;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  align-items: center;
+}
+.heading-subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  color: #F9ECDB;
+  font-family: 'Prima Sans Bold';
+  margin: 0;
+  font-size: 46px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 0s 1 normal forwards;
+}
+.subtitle {
+  color: #F9ECDB;
+  font-size: 36px;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 2s 1 normal forwards;
+}
+.heading-subtitle-border {
+  width: 363px;
+  height: 12px;
+  background-color: #9B7D53;
+  margin-top: 8px;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 3s 1 normal forwards;
+}
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 57px;
+
+}
+.first-row,
+.second-row {
+  display: flex;
+  flex-direction: row;
+  gap: 43px;
+}
+.third-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container-1 {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 4s 1 normal forwards;
+}
+#container-2 {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 5s 1 normal forwards;
+}
+#container-3 {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 6s 1 normal forwards;
+}
+#container-4 {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 7s 1 normal forwards;
+}
+#container-5 {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 8s 1 normal forwards;
+}
+#container-6 {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 9s 1 normal forwards;
+}
+#container-7 {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 10s 1 normal forwards;
+}
+.area-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #202020;
+  color: #F9ECDB;
+  width: 282px;
+  border-radius: 14px;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 5px;
+}
+.area-icon {
+  width: 160px;
+}
+.area-name {
+  font-family: Prima Sans Bold;
+  font-size: 24px;
+  margin-bottom: 22px;
+  text-align: center;
+}
+.enquire-btn {
+  background-color: #9B7D53;
+  color: #F9ECDB;
+  font-family: Prima Sans Bold;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: color 0.5s, background-color 0.5s;
+}
+.enquire-btn:hover {
+  background-color: #F9ECDB;
+  color: #9B7D53;
+}
+.area-border {
+  width: 393px;
+  background-color: #9B7D53;
+  height: 12px;
+
+}
+footer{
+  position: absolute;
+  top: 1250px;
+  left: 0;
+  right: 0;
+  height: 291px;
+  display: flex;
+  flex-direction: column;
+  background-color:#9B7D53;
+  justify-content: center;
+  align-items: center;
+}
+.firm-info {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 25px;
+  gap: 19px;
+}
+.footer-logo {
+  height: 145px;
+  margin-right: 3vw;
+}
+.office-info,
+.contact-info,
+.services-info {
+  display: flex;
+  flex-direction: column;
+  width: 19vw;
+}
+.explore-info {
+  display: flex;
+  flex-direction: column;
+}
+.office-info-heading {
+  color: white;
+  font-family: Prima Sans Bold;
+  font-size: 26px;
+  line-height: 100%;
+  margin-bottom: 9px;
+}
+.office-info-border {
+  background-color: #202020;
+  width: 81px;
+  height: 3px;
+  margin-bottom: 3px;
+}
+.office-info-address,
+.contact-info-address {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-family: Prima Sans;
+}
+.get-directions {
+  background-color: #202020;
+  color: #F9ECDB;
+  width: fit-content;
+  padding: 3px 6px;
+  border: none;
+  border-radius: 3px;
+  font-size: 11px;
+  font-family: Prima Sans Bold;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.5s, background-color 0.5s;
+}
+.get-directions:hover {
+  background-color: #F9ECDB;
+  color: #202020;
+}
+.contact-info {
+  margin-right: 90px;
+}
+.contact-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.tel-img {
+  width: 25px;
+}
+ul {
+  margin: 0;
+  padding-left: 22px;
+}
+.explore-nav {
+  display: flex;
+  flex-direction: column;
+  font-family: Prima Sans Bold;
+  color: #F9ECDB;
+  font-size: 15px;
+  gap: 8px;
+}
+.copyright {
+  position: absolute;
+  bottom: 26px;
+  display: flex;
+  color: #F9ECDB;
+  font-family: Prima Sans Bold;
+  font-size: 15px;
+  gap: 6px;
+  left: 49px;
+}
+.cibs-logo {
+  color: black;
+}
+.orange {
+  color: #ff4000;
+}
+.contact-overlay-1 {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.616);
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.contact-query-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 47px 33px;
+  background: url(/img/scales-of-justice-BG.png) no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.query-heading {
+  color: #F9ECDB;
+  font-size: 40px;
+  font-family: Prima Sans Bold;
+}
+.query-subheading {
+  color: #F9ECDB;
+  font-size: 17px;
+  font-family: Prima Sans;
+  font-weight: 900;
+}
+.query-border {
+  background-color: #9B7D53;
+  width: 363px;
+  height: 12px;
+  margin-top: 8px;
+  margin-bottom: 36px;
+}
+.query-buttons {
+  display: flex;
+  gap: 37px;
+}
+.query-btn-1,
+.query-btn-2,
+.query-btn-3 {
+  font-family: Prima Sans;
+  font-weight: 900;
+  color: #9B7D53;
+  background-color: #F9ECDB;
+  border: none;
+  width: 183px;
+  font-size: 31px;
+  padding: 30px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: color 0.5s, background-color 0.5s;
+}
+.query-btn-3 a {
+  text-decoration: none;
+  color: #9B7D53;
+}
+.query-btn-3 a:hover {
+  color: #F9ECDB;
+}
+.query-btn-1:hover,
+.query-btn-2:hover,
+.query-btn-3:hover  {
+  background-color: #9B7D53;
+  color: #F9ECDB;
+}
+.contact-overlay-2 {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.616);
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.contact-query-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 47px 33px;
+  background: url(/img/scales-of-justice-BG.png) no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.query-btn-4 {
+  font-family: Prima Sans;
+  font-weight: 900;
+  color: #9B7D53;
+  background-color: #F9ECDB;
+  border: none;
+  width: 256px;
+  font-size: 31px;
+  padding: 30px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: color 0.5s, background-color 0.5s;
+}
+.query-btn-4:hover {
+  background-color: #9B7D53;
+  color: #F9ECDB;
+}
+.contact-overlay-3 {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.616);
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.call-back-form,
+.message-form {
+  display: flex;
+  flex-direction: column;
+  padding: 63px;
+  align-items: center;
+  background: url(/img/scales-of-justice-BG.png) no-repeat center center fixed; 
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+.form-input {
+  width: 544px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.field-title {
+  margin-left: 10px;
+  margin-bottom: 9px;
+  color: white;
+  font-size: 15px;
+}
+.input-field {
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 5px #9B7D53 solid;
+  background-color: #F9ECDB;
+}
+.input-field::placeholder {
+  color: #9B7D53;
+  font-size: 15px;
+  font-weight: 900;
+}
+.input-field:focus {
+  outline: none;
+  color: #9B7D53;
+  font-family: Prima Sans Bold;
+  font-size: 15px;
+}
+textarea {
+  resize: none;
+}
+textarea::placeholder {
+  color: #9B7D53;
+  font-size: 15px;
+  font-family: Prima Sans Bold;
+}
+.form-button {
+  padding: 7px 11px;
+  background-color: #9B7D53;
+  color: #F9ECDB;
+  font-family: Prima Sans Bold;
+  font-size: 19px;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: color 0.5s, background-color 0.5s;
+}
+.form-button:hover {
+  color: #9B7D53;
+  background-color: #F9ECDB;
+}
+.contact-overlay-4 {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.616);
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+@media (min-width: 0px) and (max-width: 1000px) {
+  html {
+    background: url(/img/scales-of-justice-BG.png) center center fixed;
+  }
+  nav {
+    flex-direction: column;
+    background-color: #202020;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: auto;
+    padding: 56px 0px;
+    position: fixed;
+    z-index: 5;
+    transform: translateX(100%);
+  }
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #202020;
+    left: 0;
+    right: 0;
+    top: 0;
+    gap: 40px;
+    bottom: auto;
+    padding: 56px 0px;
+    position: relative;
+  }
+  a.practice {
+    color: #9B7D53;
+  }
+  .menu {
+    position: absolute;
+    top: 42px;
+    right: 22px;
+    width: 49px;
+  }
+  .logo2 {
+    position: absolute;
+    width: 85px;
+    bottom: auto;
+    left: 21px;
+    top: 25px;
+    right: auto;
+    margin-left: 0;
+  }
+  .logo {
+    display: none;
+  }
+  .back-arrow {
+    position: absolute;
+    width: 24px;
+    right: 31px;
+    top: 20px;
+    z-index: 5;
+  }
+  .page-label {
+    left: -14px;
+  }
+  .label-shadow {
+    left: -23px;
+  }
+  .practice-letters,
+  .areas,
+  .practice-shadow,
+  .areas-shadow {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .practice-letters,
+  .areas {
+    color: rgba(249, 236, 219, 1);
+  }
+  .practice-shadow,
+  .areas-shadow {
+    color: rgba(32, 32, 32, 0.7);
+  }
+  .main-section {
+    left: 46px;
+  }
+  h1 {
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+  }
+  .subtitle {
+    font-size: 17px;
+    text-align: center;
+  }
+  .heading-subtitle-border {
+    width: 52vw;
+    height: 6px;
+  }
+  .areas-grid {
+    gap: 21px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .first-row, .second-row {
+    display: grid;
+    gap: 21px;
+  }
+  .area-container {
+    width: 198px;
+    border-radius: 10px;
+    padding: 15px 5px;
+  }
+  .area-icon {
+    width: 113px;
+  }
+  .area-name {
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+  .enquire-btn {
+    font-size: 10px;
+    padding: 4px 6px;
+  }
+  .area-border {
+    width: 52vw;
+    height: 6px;
+  }
+  footer {
+    margin-top: 54vh;
+    height: auto;
+    padding: 27px 20px;
+    gap: 28px;
+    align-items: flex-start;
+  }
+  .office-info, 
+  .contact-info, 
+  .services-info, 
+  .explore-info {
+    width: auto;
+  }
+  .firm-info {
+    top: 0;
+    flex-direction: column;
+    position: static;
+  }
+  .get-directions {
+    font-size: 9px;
+  }
+  .office-info-heading {
+    font-size: 18px;
+  }
+  .office-info-address, 
+  .contact-info-address {
+    font-size: 10px;
+    line-height: 13px;
+    margin-bottom: 2px;
+  }
+  .tel-img {
+    width: 17px;
+  }
+  .explore-nav {
+    font-size: 10px;
+  }
+  .copyright {
+    font-size: 9px;
+    position: static;
+  }
+  .footer-logo {
+    width: 69px;
+    height: auto;
+    position: absolute;
+    bottom: 59px;
+    right: 1px;
+  }
+  .call-back-form, .message-form {
+    padding: 36px;
+  }
+  .query-heading {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .query-subheading {
+    font-size: 7px;
+    line-height: 10px;
+  }
+  .query-border {
+    width: 188px;
+    height: 4px;  
+    margin-bottom: 13px;  
+  }
+  .input-field {
+    padding: 6px;
+  }
+  .form-input {
+    width: 293px;
+  }
+  .input-field::placeholder {
+    font-size: 9.08322px;
+    line-height: 12px;
+  }
+  .field-title {
+    font-size: 9px;
+    margin-bottom: 7px;
+  }
+  .form-button {
+    padding: 4px 5px;
+    font-size: 11px;
+    border-radius: 3px;
+  }
+  .query-heading {
+    text-align: center;
+  }
+  .query-btn-1, .query-btn-2, .query-btn-3 {
+    width: 113px;
+    font-size: 17px;
+  }
+  .query-btn-4 {
+    width: 183px;
+    font-size: 17px;
+  }
+}
+@media (min-width: 660px) and (max-width: 717px) {
+  .main-section {
+    left: 71px;
+  }
+  .firm-info {
+    flex-direction: row;
+  }
+  .contact-info {
+    margin-right: 0;
+  }
+  .footer-logo {
+    position: static;
+    height: 85px;
+    margin-right: 0;
+  } 
+
+}
+@media (min-width: 540px) and (max-width: 717px) {
+  .areas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 717px) and (max-width: 1000px) {
+  .first-row, .second-row {
+    display: flex
+  }
+  .main-section {
+    left: 71px;
+  }
+  .areas-grid {
+    gap: 44px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .firm-info {
+    flex-direction: row;
+  }
+  .contact-info {
+    margin-right: 0;
+  }
+  .footer-logo {
+    position: static;
+    height: 85px;
+    margin-right: 0;
+  }
+  footer {
+    margin-top: -27vh;
+  }
+}
+@media (min-width: 1000px) {
+  .menu {
+    display: none;
+  }
+  .back-arrow {
+    display: none;
+  }
+  .logo2 {
+    display: none;
+  }
+}
