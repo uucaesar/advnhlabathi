@@ -1,10 +1,10 @@
 @font-face {
   font-family: Prima Sans;
-  src: url(/fonts/Prima\ Sans\ Regular.otf);
+  src: url(fonts/Prima\ Sans\ Regular.otf);
 }
 @font-face {
   font-family: Prima Sans Bold; 
-  src: url(/fonts/Prima\ Sans\ Bold.otf);
+  src: url(fonts/Prima\ Sans\ Bold.otf);
 }
 @keyframes fadeIn{
   0% {
@@ -27,7 +27,7 @@
 #yourTargetElement{
 }
 html {
-  background: url(/img/landing_bg.jpg) no-repeat center center fixed; 
+  background: url(img/landing_bg.jpg) no-repeat center center fixed; 
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -275,7 +275,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     padding: 47px 33px;
-    background: url(/img/scales-of-justice-BG.png);
+    background: url(img/scales-of-justice-BG.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -315,7 +315,7 @@ nav a:hover {
     flex-direction: column;
     padding: 63px;
     align-items: center;
-    background: url(/img/scales-of-justice-BG.png);
+    background: url(img/scales-of-justice-BG.png);
     background-repeat: no-repeat;
     background-size: cover;  
   }
