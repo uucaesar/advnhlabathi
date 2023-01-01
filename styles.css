@@ -119,8 +119,8 @@ section {
   font-size: 22px;
   line-height: 29px;
   font-family: "Prima Sans";
-  color: rgba(0, 0, 0, 0.82);
-  background: #f9ecdb2b;
+  color: rgba(0, 0, 0, 1);
+  background: #f9ecdb75;
   padding: 21px;
   animation: fadeIn 2s ease-in-out 4s 1 normal forwards;
 
