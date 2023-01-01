@@ -1,10 +1,10 @@
 @font-face {
   font-family: Prima Sans;
-  src: url(/fonts/Prima\ Sans\ Regular.otf);
+  src: url(fonts/Prima\ Sans\ Regular.otf);
 }
 @font-face {
   font-family: Prima Sans Bold; 
-  src: url(/fonts/Prima\ Sans\ Bold.otf);
+  src: url(fonts/Prima\ Sans\ Bold.otf);
 }
 @keyframes fadeIn{
   0% {
@@ -25,7 +25,7 @@
   animation: overlayOpen 0.5s ease-in-out 0s 1 normal forwards;
 }
 html {
-  background: url(/img/scales-of-justice-BG.png) no-repeat top center fixed; 
+  background: url(img/scales-of-justice-BG.png) no-repeat top center fixed; 
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -372,7 +372,7 @@ ul {
   justify-content: center;
   align-items: center;
   padding: 47px 33px;
-  background: url(/img/scales-of-justice-BG.png) no-repeat center center fixed;
+  background: url(img/scales-of-justice-BG.png) no-repeat center center fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -445,7 +445,7 @@ ul {
   justify-content: center;
   align-items: center;
   padding: 47px 33px;
-  background: url(/img/scales-of-justice-BG.png) no-repeat center center fixed;
+  background: url(img/scales-of-justice-BG.png) no-repeat center center fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -485,7 +485,7 @@ ul {
   flex-direction: column;
   padding: 63px;
   align-items: center;
-  background: url(/img/scales-of-justice-BG.png) no-repeat center center fixed; 
+  background: url(img/scales-of-justice-BG.png) no-repeat center center fixed; 
   background-repeat: no-repeat;
   background-size: cover;  
 }
@@ -557,7 +557,7 @@ textarea::placeholder {
 }
 @media (min-width: 0px) and (max-width: 1000px) {
   html {
-    background: url(/img/scales-of-justice-BG.png) center center fixed;
+    background: url(img/scales-of-justice-BG.png) center center fixed;
   }
   nav {
     flex-direction: column;
