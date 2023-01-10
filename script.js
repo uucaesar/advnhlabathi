@@ -11,6 +11,7 @@ const consultBtn = document.querySelector('.booking');
 const menuBtn = document.querySelector('.menu');
 const navbar = document.querySelector('nav');
 const returnBtn = document.querySelector('.back-arrow');
+const exitBtn = document.querySelectorAll('.exit-btn');
 
 
 function openOverlay() {
@@ -77,3 +78,7 @@ function closeNav() {
 returnBtn.addEventListener('click', closeNav);
 
 consultBtn.addEventListener('click', openOverlay4);
+
+exitBtn.forEach(exitBtn => {
+  exitBtn.addEventListener('click', closeOverlay);
+});
