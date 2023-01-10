@@ -40,6 +40,17 @@ body {
   height: 100vh;
   margin: 0;
 }
+.exit-btn {
+  font-family: Prima Sans Bold;
+  color: #F9ECDB;
+  position: absolute;
+  top: 26px;
+  right: 35px;
+  font-size: 19px;
+  cursor: pointer;
+  background-color: red;
+  border: none;
+}
 nav {
   position: absolute;
   top: 0;
