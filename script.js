@@ -77,8 +77,9 @@ function closeNav() {
 }
 returnBtn.addEventListener('click', closeNav);
 
-consultBtn.addEventListener('click', openOverlay4);
-
 exitBtn.forEach(exitBtn => {
   exitBtn.addEventListener('click', closeOverlay);
 });
+
+consultBtn.addEventListener('click', openOverlay4);
+
