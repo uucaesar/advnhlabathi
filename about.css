@@ -74,6 +74,9 @@ a {
 a:hover {
   color: #202020;
 }
+a.blog {
+  display: none;
+}
 .about {
   color: #202020;
 }
