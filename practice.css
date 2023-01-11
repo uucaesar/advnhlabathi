@@ -136,7 +136,7 @@ a.blog {
 .main-section {
   position: absolute;
   top: 156px;
-  left: 144px;
+  left: 14vw;
   display: flex;
   flex-direction: column;
   gap: 33px;
